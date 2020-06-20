@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/animations.css">
+
+    <style id="keyframeAnimation">
+    </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Color Cycle</title>
+</head>
+
+<body>
+    <header>
+        <h1>Color Cycle</h1>
+    </header>
+
+    <main>
+        <div class="box"></div>
+
+        <div class="input-field">
+
+            <h2>Starting color</h2>
+
+            <div class="field1">
+                <label for="redInput">Red Color</label>
+                <input type="text" id="redInput" maxlength="2" placeholder="#FF">
+
+                <label for="greenInput">Green Color</label>
+                <input type="text" id="greenInput" maxlength="2" placeholder="#FF">
+
+                <label for="blueInput">Blue Color</label>
+                <input type="text" id="blueInput" maxlength="2" placeholder="#FF">
+            </div>
+
+            <h2>Color cycle</h2>
+
+            <div class="field2">
+                <label for="colorVariation">Color Variation</label>
+                <input type="number" id="colorVariation" placeholder="14">
+
+                <label for="timeVariation">Time Variation</label>
+                <input type="number" id="timeVariation" placeholder="10s"></input>
+
+                <button id="startAnimation">Start</button>
+                <button id="stopAnimation">Stop</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            This site have many buttons and a box where you can edit the color of the box through hexadecimal
+            numbers.
+        </p>
+        <p>
+            How that's work, the colors have a rgb acronym, meaning red, green and blue equal the fields up there.
+            you must put two hexadecimal numbers from 00 to FF, in that order, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B,
+            C, D, E, F.
+        </p>
+        <p>
+            Example: #ffffff, this color is white and this, #000000, is black.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

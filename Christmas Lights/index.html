@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Lights</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="createSettings(); createCircles()">
+    <header>
+        <h1>Christmas Lights</h1>
+    </header>
+    <section>
+        <div id="container">
+        </div>
+        <br>
+        <input type="button" value="Start" id="start" onclick="buttonChange()">
+        <input type="number" value="15" id="speed">
+        <div id="settings"></div>
+        <input type="button" value="Settings" id="inputSettings" onclick="showSettings()">
+    </section>
+    <script src="main.js"></script>
+    <script src="./components/settings.js"></script>
+    <script src="./components/circles.js"></script>
+</body>
+
+</html>

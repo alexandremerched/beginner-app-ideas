@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Dollars to cents</title>
+</head>
+
+<body>
+    <header>
+        <h1>Dollars to cents</h1>
+    </header>
+    <main>
+        <div class="input-field">
+            <div class="align-input">
+                <label for="dollarInput">Dollar</label>
+                <input type="text" id="dollarInput" placeholder="US$">
+            </div>
+
+            <button id="buttonConvert">Convert</button>
+
+            <div class="align-input">
+                <label for="centsInput">Cents</label>
+                <input type="text" id="centsInput" disabled>
+            </div>
+
+            <textarea id="centsTextarea" disabled></textarea>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

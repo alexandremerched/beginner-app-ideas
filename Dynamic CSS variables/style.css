@@ -1,0 +1,77 @@
+:root {
+    --background-pattern: white;
+    --background-empty-text: lightyellow;
+    --background-user-invalid: #ffcccb;
+    --border-pattern: 2px solid rgba(0, 0, 0, 0.1);
+    --border-empty-text: 2px solid rgb(255, 255, 177);
+    --border-user-invalid: 2px solid #ffcccb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    background-color: #f0f0f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    font-weight: bold;
+    margin: 20px auto 40px;
+    font-size: 30px;
+}
+
+main {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+}
+
+div.field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+div.align-input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 14px 16px;
+    font-size: 20px;
+    margin: 10px;
+    width: 200px;
+    outline: none;
+}
+
+label {
+    font-size: 24px;
+}
+
+button {
+    padding: 2px;
+    border: none;
+    border-radius: 8px;
+    width: 120px;
+    cursor: pointer;
+    transition: 200ms;
+    font-size: 18px;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}

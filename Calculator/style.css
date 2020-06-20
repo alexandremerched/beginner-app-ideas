@@ -1,0 +1,81 @@
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@3/distr/fira_code.css);
+
+body {
+    margin: 0;
+    background: rgb(0, 162, 255);
+    font: normal 15pt Arial;
+}
+
+section {
+    display: flex;
+    margin: auto;
+    padding: 40px 10px;
+    background: white;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+header, footer {
+    color: white;
+    text-align: center;
+}
+
+div#calculator {
+    display: flex;
+    margin: auto;
+    padding: 27px 4px;
+    width: 200px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(170, 170, 170);
+    border: 0.5px black solid;
+    border-radius: 5px;
+}
+
+div#calculator div {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+
+div#calculator div:nth-child(1) {
+    display: block;
+    text-align: end;
+    width: 198px;
+    font-size: 13px;
+}
+
+div#calculator div:nth-child(7) input:nth-child(4) {
+    font-family: 'Fira Code', monospace;
+}
+
+input#input {
+    width: 190px;
+    height: 25px;
+    font-size: large;
+    margin-bottom: 2px;
+    text-align: end;
+}
+
+input#input:focus {
+    outline: none;
+}
+
+input.button {
+    margin: 3px 3px;
+    width: 51px;
+    height: 32px;
+    font-size: large;
+}
+
+footer {
+    margin-top: 3px;
+    font-style: italic;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

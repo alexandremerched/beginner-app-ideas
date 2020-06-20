@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora 2.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@3/distr/fira_code.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora 2.0</h1>
+    </header>
+
+    <section>
+        <div id="calculator">
+            <div id="label"></div>
+            <div>
+                <input readonly type="text" id="input" value="0">
+            </div>
+            <div>
+                <input type="button" class="button" value="AC" onclick="calculator('AC')">
+                <input type="button" class="button" value="C" onclick="calculator('C')">
+                <input type="button" class="button" value="+" onclick="calculator('+')">
+                <input type="button" class="button" value="-" onclick="calculator('-')">
+            </div>
+            <div>
+                <input type="button" class="button" value="1" onclick="calculator(1)">
+                <input type="button" class="button" value="2" onclick="calculator(2)">
+                <input type="button" class="button" value="3" onclick="calculator(3)">
+                <input type="button" class="button" value="*" onclick="calculator('*')">
+            </div>
+            <div>
+                <input type="button" class="button" value="4" onclick="calculator(4)">
+                <input type="button" class="button" value="5" onclick="calculator(5)">
+                <input type="button" class="button" value="6" onclick="calculator(6)">
+                <input type="button" class="button" value="/" onclick="calculator('/')">
+            </div>
+            <div>
+                <input type="button" class="button" value="7" onclick="calculator(7)">
+                <input type="button" class="button" value="8" onclick="calculator(8)">
+                <input type="button" class="button" value="9" onclick="calculator(9)">
+                <input type="button" class="button" value="=" onclick="calculator('=')">
+            </div>
+            <div>
+                <input type="button" class="button" value="+/-" onclick="calculator('negative')">
+                <input type="button" class="button" value="0" onclick="calculator(0)">
+                <input type="button" class="button" value="." onclick="calculator('.')">
+                <input type="button" class="button" value="<-" onclick="calculator('Backspace')">
+
+            </div>
+        </div>
+    </section>
+
+    <footer>&copy; Alexandre Merched</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

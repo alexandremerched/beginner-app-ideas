@@ -1,0 +1,53 @@
+body {
+    background: rgb(0, 162, 255);
+    font: normal 15pt Arial;
+}
+
+header, footer {
+    color: white;
+    text-align: center;
+}
+
+section {
+    margin: auto;
+    padding: 15px;
+    background: white;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+div#box {
+    display: flex;
+    background: rgb(2, 100, 156);
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+section div {
+    font-size: 13pt;
+}
+
+section div input {
+    width: 30px;
+}
+
+input#ocultar, input#copy {
+    display: none;
+}
+
+p#advanced {
+    display: none;
+}
+
+footer {
+    margin-top: 5px;    
+    font-style: italic;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

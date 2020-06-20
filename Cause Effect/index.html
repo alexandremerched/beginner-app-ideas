@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cause Effect</title>
+</head>
+
+<body onload="createAndRenderList()">
+    <div id="main">
+        <header>
+            <h1>Cause Effect</h1>
+        </header>
+        <section id="pane">
+            <div id="container">
+                <input type="text" readonly name=null id="fullname" placeholder="Nome Completo">
+                <input type="text" readonly id="address" placeholder="Endereço">
+                <br>
+                <input type="text" readonly id="telNumber" placeholder="Celular">
+                <input type="text" readonly id="birthday" placeholder="Data de Nascimento">
+            </div>
+        </section>
+        <nav id="menu">
+            <details>
+                <summary>Nomes</summary>
+                <ul id="listNames"></ul>
+            </details>
+        </nav>
+    </div>
+    <div id="highlightOptions">
+        <div id="form">
+            <div id="close">
+                <input type="button" id="closeButton" value="X" onclick="closeOptionsAndResetAll()">
+            </div>
+            <input type="text" placeholder="Cor da borda" name="optionsHighlight" id="borderColor"
+                onkeyup="setBorderStyleHighlight(event, 'color')">
+            <input type="text" placeholder="Tamanho da borda" name="optionsHighlight" id="borderSize"
+                onkeyup="setBorderStyleHighlight(event, 'size')">
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="highlight.js"></script>
+</body>
+
+</html>

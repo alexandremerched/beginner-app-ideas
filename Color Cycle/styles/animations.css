@@ -1,0 +1,42 @@
+@keyframes text-colorchange {
+    0% {
+        color: #f4e749;
+    }
+    10% {
+        color: #60bbf4;
+    }
+    20% {
+        color: rgb(0, 228, 228);
+    }
+    30% {
+        color: #7d42dd;
+    }
+    40% {
+        color: #e5903a;
+    }
+    50% {
+        color: #a58828;
+    }
+    60% {
+        color: #bc3bbc;
+    }
+    70% {
+        color: #164a16;
+    }
+    80% {
+        color: #d94646;
+    }
+    90% {
+        color: #b96c52;
+    }
+    100% {
+        color: #badf54;
+    }
+}
+
+header, h2 {
+    animation-name: text-colorchange;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}

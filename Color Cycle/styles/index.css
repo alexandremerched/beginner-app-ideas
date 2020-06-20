@@ -1,0 +1,99 @@
+body {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 20% 70%;
+    height: 100vh;
+    background-color: #f0f0f5;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+main h2:nth-child(3) {
+    grid-area: h2-2;
+}
+
+h2 {
+    text-align: center;
+}
+
+.box {
+    background-color: white;
+    margin-bottom: 40px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px 0px 10px;
+}
+
+.box:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.input-field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'h2-1 h2-2' 'field-1 field-2';
+
+}
+
+.input-field label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.input-field input {
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 3px;
+    width: 40px;
+    height: 20px;
+    border: 0;
+    border-radius: 8px;
+    outline-style: none;
+}
+
+.input-field .field1,
+.input-field .field2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-self: center;
+    align-items: center;
+    gap: 12px 12px;
+    margin: 15px;
+}
+
+.input-field .field2 {
+    justify-items: center;
+}
+
+.input-field .field2 button {
+    cursor: pointer;
+    background-color: rgb(4, 177, 4);
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 3px;
+    border: 0;
+    border-radius: 8px;
+    outline-style: none;
+    transition: 0.2s;
+}
+
+.input-field .field2 button:hover {
+    background-color: rgb(55, 197, 55);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.input-field .field2 button + button {
+    background-color: rgb(255, 0, 0);
+}
+
+.input-field .field2 button + button:hover {
+    background-color: rgb(228, 55, 55);
+}

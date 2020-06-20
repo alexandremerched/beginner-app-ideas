@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+    font: normal 18pt Arial;
+    text-align: center;
+}
+
+#main {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 'header header''menu section';
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(248, 217, 159);
+}
+
+#pane {
+    grid-area: section;
+}
+
+input:focus, summary:focus {
+    outline: none;
+}
+
+h1 {
+    color: teal;
+    text-align: center;
+}
+
+#container input {
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 3px;
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#menu {
+    grid-area: menu;
+    background-color: rgb(248, 230, 195);
+}
+
+#menu summary {
+    color: #333;
+    font-size: 14pt;
+    text-align: start;
+    padding: 5px 5px 5px 5px;
+}
+
+#menu summary::-webkit-details-marker {
+    color: teal;
+    width: 10px;
+    height: 10px;
+}
+
+#menu ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+#menu ul li input {
+    font-size: 14pt;
+    color: #333;
+    background-color: rgb(248, 230, 195);
+    border: 3px solid rgb(248, 230, 195);
+}
+
+#menu ul li input:hover, summary:hover {
+    color: teal;
+    cursor: pointer;
+}
+
+#highlightOptions {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#form {
+    display: grid;
+    padding-bottom: 7px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 0.4fr 1fr 1fr;
+    height: 100px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+#form input:nth-child(n+2):nth-child(-n+3) {
+    grid-column: 1 / 3;
+    text-align: center;
+    margin: 1px 10px 0px;
+    height: 25px;
+}
+
+#close {
+    display: flex;
+    grid-column: 2;
+    justify-self: right;
+}
+
+#closeButton {
+    font-size: 10px;
+    background: none;
+    border: none;
+    height: 10px;
+    width: 13px;
+    margin-right: 3px;
+}
+
+#closeButton:hover {
+    color: red;
+    cursor: pointer;
+}

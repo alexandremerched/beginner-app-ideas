@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/popup.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js" type="text/javascript"></script>
+
+    <title>Countdown Timer</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Countdown Timer</h1>
+        </header>
+
+        <main>
+            <div class="input-field">
+                <label for="eventName">Event</label>
+                <input type="text" id="eventName" placeholder="Event Name">
+
+                <label for="eventDate">Date</label>
+                <input type="text" id="eventDate" placeholder="DD/MM/AAAA">
+
+                <label for="eventTime">Time</label>
+                <input type="text" id="eventTime" placeholder="00:00:00">
+
+                <button id="setCountdownButton">Start</button>
+            </div>
+
+            <div class="popup-wrapper">
+                <div class="popup">
+                    <div class="popup-close">x</div>
+
+                    <div class="popup-content">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="scripts/countdown.js"></script>
+    <script src="scripts/popup.js"></script>
+</body>
+
+</html>

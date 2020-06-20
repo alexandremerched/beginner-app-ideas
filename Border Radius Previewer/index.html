@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Border Radius</h1>
+    </header>
+
+    <section>
+        <div>
+            <div id="box" onmouseover="colorChange()"></div><br>
+            <p>
+                Top-left: <input type="number" value="0" id="tl" onkeyup="radius()">
+                Bottom-left: <input type="number" value="0" id="bl" onkeyup="radius()">
+                Bottom-right: <input type="number" value="0" id="br" onkeyup="radius()">
+                Top-right: <input type="number" value="0" id="tr" onkeyup="radius()">
+            </p>
+            <p id="advanced">
+                Top-left: <input type="number" value="0" id="tll" onkeyup="radius()">
+                Bottom-left: <input type="number" value="0" id="bll" onkeyup="radius()">
+                Bottom-right: <input type="number" value="0" id="brr" onkeyup="radius()">
+                Top-right: <input type="number" value="0" id="trr" onkeyup="radius()">
+            </p>
+        </div>
+        <input type="button" value="Avançado" id="avancado" onclick="show()"><br><br>
+        <input type="button" value="Resultado" id="resultado" onclick="res()">
+        <input type="button" value="Ocultar" id="ocultar" onclick="ocultar()">
+        <input type="button" value="Copy" id="copy" onclick="copiar()">
+    </section>
+
+    <footer>&copy; Alexandre Merched</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
